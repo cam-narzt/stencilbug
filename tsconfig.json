@@ -1,25 +1,31 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "declaration": false,
-    "experimentalDecorators": true,
-    "lib": [
-      "dom",
-      "es2017"
+    "compilerOptions": {
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "allowUnreachableCode": false,
+        "declaration": false,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "esnext",
+            "dom.Iterable"
+        ],
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "es2017",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "newLine": "lf",
+        "jsx": "react",
+        "jsxFactory": "h"
+    },
+    "include": [
+        "./app/javascript"
     ],
-    "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es2017",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "jsx": "react",
-    "jsxFactory": "h"
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "exclude": [
+        "node_modules"
+    ]
 }
