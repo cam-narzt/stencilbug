@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'demo-error',
+  srcDir: 'app/javascript/',
   outputTargets: [
     {
       type: 'dist',
